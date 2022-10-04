@@ -1,0 +1,26 @@
+:root {
+  --limite: 80%;
+  --limite--barrinha: 80vw;
+}
+
+#fundo {
+  background-color: rgb(65, 151, 207);
+  width: var(--limite);
+}
+
+#barrinha {
+  width: 20px;
+  height: 13px;
+  background-color: rgb(191, 211, 224);
+  animation: passar 1.5s linear infinite;
+}
+
+@keyframes passar {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(var(--limite--barrinha) - 30px));
+  }
+}
